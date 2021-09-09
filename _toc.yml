@@ -5,11 +5,13 @@ defaults:
   numbered: true
 parts:
 - caption: Home
-  file: intro
+  chapters:
+  - file: intro
 
 - caption: Syllabus & Lectures
-  file: syllabus/intro
-  expand_sections: true
+  chapters:
+  - file: syllabus/intro
+  - expand_sections: true
   sections:
     - caption: Course Inspiration
       file: syllabus/inspiration
@@ -19,21 +21,25 @@ parts:
       file: syllabus/slides
 
 - caption: Textbook
-  file: textbook
+  chapters:
+  - file: textbook
 
 - caption: The datascience Python Package
-  file: datascience
+  chapters:
+  - file: datascience
 
 - caption: Course Staff
-  file: staff/intro
-  expand_sections: true
+  chapters:
+  - file: staff/intro
+  - expand_sections: true
   sections:
     - caption: Roles and Responsibilities
       file: staff/roles
 
 - caption: Jupyter Notebook Assignments
-  file: jupyter/intro
-  expand_sections: true
+  chapters:
+  - file: jupyter/intro
+  - expand_sections: true
   sections:
     - caption: Assignments in Data 8
       file: jupyter/jupyter_assignments
@@ -43,8 +49,9 @@ parts:
       file: jupyter/making_assignments
 
 - caption: Labs, Worksheets, and Discussions
-  file: labs/intro
-  expand_sections: true
+  chapters:
+  - file: labs/intro
+  - expand_sections: true
   sections:
     - caption: Lab Sections
       file: labs/labs
@@ -52,7 +59,9 @@ parts:
       file: labs/tutors
 
 - caption: Connectors and Modules
-  file: connectors_modules
+  chapters:
+  - file: connectors_modules
 
 - caption: Appendix
-  file: useful_links
+  chapters:
+  - file: useful_links
