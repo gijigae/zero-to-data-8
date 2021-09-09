@@ -1,67 +1,51 @@
-# Top-level page
-root: intro
-format: jb-book
-defaults:
-  numbered: true
-parts:
-- caption: Home
-  chapters:
-  - file: intro
-
-- caption: Syllabus & Lectures
-  chapters:
-  - file: syllabus/intro
-  - expand_sections: true
-  sections:
-    - caption: Course Inspiration
-      file: syllabus/inspiration
-    - caption: Syllabus Structure
-      file: syllabus/syllabus
-    - caption: Lecture Slides & Videos
-      file: syllabus/slides
-
-- caption: Textbook
-  chapters:
-  - file: textbook
-
-- caption: The datascience Python Package
-  chapters:
-  - file: datascience
-
-- caption: Course Staff
-  chapters:
-  - file: staff/intro
-  - expand_sections: true
-  sections:
-    - caption: Roles and Responsibilities
-      file: staff/roles
-
-- caption: Jupyter Notebook Assignments
-  chapters:
+root: connectors_modules
+entries:
+- file: datascience
+- file: intro
+- file: LICENSE
+- file: README
+- file: textbook
+- file: useful_links
+- file: content/connectors_modules
+  entries:
+  - file: content/datascience
+  - file: content/intro
+  - file: content/LICENSE
+  - file: content/textbook
+  - file: content/useful_links
+  - file: content/jupyter/distribution
+    entries:
+    - file: content/jupyter/intro
+    - file: content/jupyter/jupyter_assignments
+    - file: content/jupyter/making_assignments
+  - file: content/labs/intro
+    entries:
+    - file: content/labs/labs
+    - file: content/labs/tutors
+  - file: content/staff/intro
+    entries:
+    - file: content/staff/roles
+  - file: content/syllabus/distribution
+    entries:
+    - file: content/syllabus/inspiration
+    - file: content/syllabus/intro
+    - file: content/syllabus/slides
+    - file: content/syllabus/syllabus
+- file: jupyter/distribution
+  entries:
   - file: jupyter/intro
-  - expand_sections: true
-  sections:
-    - caption: Assignments in Data 8
-      file: jupyter/jupyter_assignments
-    - caption: Distributing Assignments
-      file: jupyter/distribution
-    - caption: Writing Your Own Assignments
-      file: jupyter/making_assignments
-
-- caption: Labs, Worksheets, and Discussions
-  chapters:
-  - file: labs/intro
-  - expand_sections: true
-  sections:
-    - caption: Lab Sections
-      file: labs/labs
-    - caption: Tutor Sections
-      file: labs/tutors
-
-- caption: Connectors and Modules
-  chapters:
-  - file: connectors_modules
-
-- caption: Appendix
-  chapters:
-  - file: useful_links
+  - file: jupyter/jupyter_assignments
+  - file: jupyter/making_assignments
+- file: labs/intro
+  entries:
+  - file: labs/labs
+  - file: labs/tutors
+- file: staff/intro
+  entries:
+  - file: staff/roles
+- file: syllabus/distribution
+  entries:
+  - file: syllabus/inspiration
+  - file: syllabus/intro
+  - file: syllabus/slides
+  - file: syllabus/syllabus
